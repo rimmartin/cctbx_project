@@ -289,7 +289,7 @@ class Toolbox(object):
         return -2
       # if url fails to open, try using curl
       # temporary fix for old OpenSSL in system Python on macOS
-      # https://rimmartin/cctbx_project/issues/33
+      # https://github.com/rimmartin/cctbx_project/issues/33
       command = ['/usr/bin/curl', '--http1.0', '-Lo', file, '--retry', '5', url]
       subprocess.call(command, shell=False)
       socket = None     # prevent later socket code from being run
@@ -722,8 +722,8 @@ class cctbx_module(SourceModule):
   module = 'cctbx_project'
   anonymous = ['git',
                'git@github.com:rimmartin/cctbx_project.git',
-               'https://rimmartin/cctbx_project.git',
-               'https://rimmartin/cctbx_project/archive/master.zip']
+               'https://github.com/rimmartin/cctbx_project.git',
+               'https://github.com/rimmartin/cctbx_project/archive/master.zip']
 
 class qrefine_module(SourceModule):
   module = 'qrefine'
@@ -731,8 +731,8 @@ class qrefine_module(SourceModule):
                'git@github.com:qrefine/qrefine.git',
                'https://github.com/qrefine/qrefine.git',
                #'git@github.com:rimmartin/cctbx_project.git',
-               #'https://rimmartin/cctbx_project.git',
-               #'https://rimmartin/cctbx_project/archive/master.zip']
+               #'https://github.com/rimmartin/cctbx_project.git',
+               #'https://github.com/rimmartin/cctbx_project/archive/master.zip']
                ]
 
 class mon_lib_module(SourceModule):
@@ -752,8 +752,8 @@ class boost_module(SourceModule):
   module = 'boost'
   anonymous = ['git',
                'git@github.com:rimmartin/boost.git',
-               'https://rimmartin/boost.git',
-               'https://rimmartin/boost/archive/master.zip']
+               'https://github.com/rimmartin/boost.git',
+               'https://github.com/rimmartin/boost/archive/master.zip']
 
 class cbflib_module(SourceModule):
   module = 'cbflib'
@@ -771,8 +771,8 @@ class annlib_adaptbx(SourceModule):
   module = 'annlib_adaptbx'
   anonymous = ['git',
                'git@github.com:rimmartin/annlib_adaptbx.git',
-               'https://rimmartin/annlib_adaptbx.git',
-               'https://rimmartin/annlib_adaptbx/archive/master.zip']
+               'https://github.com/rimmartin/annlib_adaptbx.git',
+               'https://github.com/rimmartin/annlib_adaptbx/archive/master.zip']
 
 class tntbx_module(SourceModule):
   module = 'tntbx'
@@ -903,8 +903,8 @@ class dxtbx_module(SourceModule):
   module = 'dxtbx'
   anonymous = ['git',
                'git@github.com:rimmartin/dxtbx.git',
-               'https://rimmartin/dxtbx.git',
-               'https://rimmartin/dxtbx/archive/master.zip']
+               'https://github.com/rimmartin/dxtbx.git',
+               'https://github.com/rimmartin/dxtbx/archive/master.zip']
 
 class dials_regression_module(SourceModule):
   module = 'dials_regression'

@@ -51,7 +51,7 @@ def get_pypi_package_information(package, version=None, information_only=False):
 DEPENDENCIES_BASE = "https://gitcdn.link/repo/dials/dependencies/master/"
 OPENSSL_PKG = "openssl-1.0.2r.tar.gz"    # OpenSSL
 PYTHON3_PKG = "Python-3.7.2.tgz"
-PYTHON_PKG = "Python-2.7.10.tgz"
+PYTHON_PKG = "Python-2.7.14.tgz"
 
 # from CCI
 IMAGING_PKG = "Imaging-1.1.7.tar.gz"     # for labelit, gltbx

@@ -129,7 +129,7 @@ class installer(object):
       self.min_macos_version = '10.7'
       self.min_macos_version_flag = '-mmacosx-version-min=%s' %\
                                     self.min_macos_version
-      self.base_macos_flags = ' -stdlib=libc++ %s' % self.min_macos_version_flag
+      self.base_macos_flags = ' %s' % self.min_macos_version_flag
       self.cppflags_start += self.base_macos_flags
       self.ldflags_start += self.base_macos_flags
 
